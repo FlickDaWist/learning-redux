@@ -1,0 +1,8 @@
+{
+    id: 1,
+    name: "Mug",
+    stock: 20,
+    image: "mug.jpg",
+    desc: "Coffe Mug",
+    price: 1500,
+}

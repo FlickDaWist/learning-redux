@@ -1,0 +1,22 @@
+{
+  type: "productAdded",
+  payload: {
+    product: {
+      id: 1,
+      name: "Mug",
+      stock: 20,
+      image: "mug.jpg",
+      desc: "Coffe Mug",
+      price: 1500,
+    }
+  }
+}
+
+{
+  type: "productRemoved",
+  payload: {
+    product: {
+      id: 1
+    }
+  }
+}

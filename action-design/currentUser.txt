@@ -1,0 +1,15 @@
+{
+  type: "changeUserName",
+  payload: {
+    userId: 1
+    value: "Oka"
+  }
+}
+
+{
+  type: "changeEmail",
+  payload: {
+    userId: 1
+    value: "oka@gmail.com"
+  }
+}

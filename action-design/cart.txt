@@ -1,0 +1,21 @@
+{
+  type: "addProductToCart",
+  payload: {
+    productId: 1
+    productCount: 1
+  }
+}
+
+{
+  type: "decreaseProductCount",
+  payload: {
+    productId: 1
+  }
+}
+
+{
+  type: "increaseProductCount",
+  payload: {
+    productId: 1
+  }
+}

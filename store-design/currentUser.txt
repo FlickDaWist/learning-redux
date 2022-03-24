@@ -1,0 +1,5 @@
+{
+    userId: 1,
+    username: "Augi",
+    email: "augi@gmail.com",
+}
