@@ -9,9 +9,8 @@ const productSlice = createSlice({
   name: "product",
   initialState,
   reducers: {
-
     productAdded: (products, action) => {
-      products.list.push({
+      products.lists.push({
         id: ++lastId,
         name: action.payload.name,
         price: action.payload.price,
@@ -20,15 +19,18 @@ const productSlice = createSlice({
     },
 
     productRemoved: (products, action) => {
-      listAfterRemove = products.list.filter((val) => {
+      listAfterRemove = products.lists.filter((val) => {
         return val.id !== action.payload.id;
       });
-      products.list = listAfterRemove;
+      products.lists = listAfterRemove;
     },
-    
 
+    apiProductsRequestSucceeded: (products, action) => {
+      products.lists.push(...action.payload);
+    },
   },
 });
 
-export const { productAdded, productRemoved } = productSlice.actions;
+export const { productAdded, productRemoved, apiProductsRequestSucceeded } =
+  productSlice.actions;
 export default productSlice.reducer;
